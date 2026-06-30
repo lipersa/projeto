@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        {% block titulo %}
+        Homepage
+        {% endblock %}
+    </title>
+
+    <style>
+
+</style>
+</head>
+<body>
+{% block body %}
+
+        <h1>HOMEPAGE</h1>
+        <p> Seja bem vindo</p>
+
+<a href="{{ url_for ('criarconta')}}">Criar conta</a>
+
+{% block formulario %}
+<form method="POST">
+
+
+
+    {{ form.csrf_token }}
+
+    {{ form.email.label }}
+    {{ form.email() }}
+
+    {{ form.senha.label }}
+    {{ form.senha() }}
+
+    {{form.botao() }}
+
+
+</form>
+{% endblock %}
+{% endblock %}
+</body>
+</html>
