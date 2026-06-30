@@ -1,4 +1,4 @@
-# Byte-compiled / optimized / DLL files
+﻿# Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
 *$py.class
@@ -64,6 +64,11 @@ db.sqlite3-journal
 # Flask stuff:
 instance/
 .webassets-cache
+*.sqlite3
+*.db
+*.db-journal
+chave.py
+projetoti102/static/fotos_posts/
 
 # Scrapy stuff:
 .scrapy
@@ -216,3 +221,4 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
